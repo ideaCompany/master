@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js One Page Scroll Sites</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="app.css" />
+	<style>
+
+		/* Sections
+		 * --------------------------------------- */
+         
+         .lightOn{
+            background-image: url(imgs/bulbLightEffectOn.png) !important ; 
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: background 0.5s ease-in-out;
+            -moz-transition: background 0.5s ease-in-out;
+            -webkit-transition: background 0.5s ease-in-out;
+        }
+        
+        #section0{
+            background-image: url(imgs/bulbLightEffectOff.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        
+         #section1{
+            background-image: url(imgs/mockGrad5.png);
+            right:-90%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        #section1 p {
+			display:none;
+		}
+         #section1 h1{
+			display:none;
+		}
+       
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+        #section4 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+</head>
+<body>
+    
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Top</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Cv</a></li>
+    <li data-menuanchor="5thpage"><a href="#5thpage">Contact</a></li>
+</ul>
+
+
+<div id="fullpage">
+    
+	<div class="section" id="section0">
+        <br/><br/><br/>
+		<h1>Idea</h1>
+		<p>If you have a Vision !</p>
+	</div>
+    
+    <div class="section" id="section1">
+		<div class="intro">
+			<h1>Proffesional</h1>
+			<p>And you need some help from a fellow proffesional</p>
+		
+		</div>
+	</div>
+    
+	<div class="section" id="section2">
+	    <div class="slide">
+			<div class="intro">
+				<h1>Believes</h1>
+				<p>Who believes in common sense engineering principles</p>
+				<img src="imgs/slider.png" alt="slider" />
+			</div>
+
+		</div>
+	    <div class="slide">
+			<div class="intro">
+				<img src="imgs/1.png" alt="simple" />
+				<h1>Simple</h1>
+				<p>Believes Simplicity is key</p>
+			</div>
+		</div>
+        
+	    <div class="slide">
+			<div class="intro">
+				<img src="imgs/2.png" alt="testing" />
+				<h1>Testing</h1>
+				<p>Testing your sofware is a must</p>
+			</div>
+		</div>
+	    <div class="slide">
+			<div class="intro">
+				<img src="imgs/3.png" alt="friendly" />
+				<h1>Friendly</h1>
+				<p>Users should enjoy your vision</p>
+			</div>
+		</div>
+	</div>
+    
+    <div class="section" id="section3">
+		<div class="intro">
+			<h1>Experience</h1>
+            Download cv here
+		</div>
+	</div>
+    
+    <div class="section" id="section4">
+		<div class="intro">
+			<h1>Contact</h1>
+            <br/>
+            <p>Stefaan Van Hoof</p>
+            <small> Software engineer / analyst & UX enthousiast</small>
+            <br/><br/>
+            stefaan.van.hoof@gmail.com
+            <br/>
+            <small>Nachtegaalstraat 15</small>
+            <br/>
+            <small>2060 Antwerpen</small>
+            <br/>
+            <small>+32 0486494105</small>
+		</div>
+    </div>
+    
+</div>
+
+</body>
+</html>
